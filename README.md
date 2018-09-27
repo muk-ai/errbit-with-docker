@@ -13,6 +13,8 @@ secretは `rails secret` で生成できます
 $ source .env
 ```
 
+`docker-compose` はとくに指定しなくてもこのファイルを読むようです。
+
 ## SSL証明書未取得の時
 
 
