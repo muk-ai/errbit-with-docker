@@ -42,7 +42,7 @@ server {
   }
 
   location ^~ /.well-known/ {
-    root /usr/share/nginx/html;
+    root /tmp/letsencrypt-auto;
   }
 }
 

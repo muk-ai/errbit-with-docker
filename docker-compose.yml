@@ -10,7 +10,7 @@ services:
     volumes:
       - /etc/letsencrypt/live/${FQDN}/fullchain.pem:/etc/nginx/cert.pem:ro
       - /etc/letsencrypt/live/${FQDN}/privkey.pem:/etc/nginx/cert.key:ro
-      - /usr/share/nginx/html:/usr/share/nginx/html
+      - /tmp/letsencrypt-auto:/tmp/letsencrypt-auto
       - /var/log/nginx:/var/log/nginx
     command: >
       /bin/sh -c
